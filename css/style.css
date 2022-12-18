@@ -5,11 +5,11 @@ body {
 .wrapper {
   background-color: #3D3D3D;
   margin: 0 auto;
-  height: 150vh;
+  height: auto;
   width: 80%;
 }
 
-/* wrapper and body done by Slava */
+/* wrapper and body done by Slava. Royalty free background image */
 
 .header {
   display: flex;
@@ -37,18 +37,20 @@ body {
 h1{
   font-size: 40px;
   font-family: Unbounded;
-    color: white;
+    color: #8c52ff;
+    text-align: center;
+
 }
 
 h2 {
   font-size: 40px;
-  font-family: Noto Sans;
+  font-family: Unbounded;
   color: white;
 }
 
 h3 {
-  font-size: 30px;
-  font-family: Noto Sans;
+  font-size: 40px;
+  font-family: Unbounded;
   color: white;
 }
 
@@ -60,8 +62,8 @@ h4 {
 
 p {
   font-family: Noto Sans;
-  font-size: 30px;
-  margin: 10px;
+  font-size: 20px;
+  margin: auto;
   color: white;
 }
 
@@ -87,17 +89,18 @@ p {
 
 .navbar li a {
   display: block;
-  color: white;
+  color: #8c52ff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-align: center;
   background-color: #2B2B2B;
-  font-family: Noto Sans;
+  font-family: Unbounded;
 }
 
 .navbar li a:hover {
   background-color: #111;
+  transform: scale(1.1);
 }
 
 ul {
@@ -186,53 +189,34 @@ footer {
   transform: scale(1.1);
 }
 /* CSS code for the footer and styling completed by Charlie. Reference: https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
-.blog-post {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  border: 3px solid lightgreen;
-  padding: 10px;
-}
-.blog-post img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  margin-right: 20px;
-  align-items: center;
-}
-.blog-post .content {
-  flex: 1;
-}
-.blog-post h2 {
-  margin: 0;
-  font-size: 24px;
-  text-align: center
-}
-.blog-post p {
-  margin: 10px 0;
-  font-size: 16px;
-  line-height: 1.5;
-}
-/*styling for content on home page created by Charlie*/
+
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border: 3px solid lightgreen;
   margin: 0 auto;
 }
+.form-text{
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  border: 3px solid lightgreen;
+  align-items: center;
+  font-family: Noto Sans;
+}
 .form-text h1 {
   font-family: Unbounded;
-  font-size: 30px;
+  font-size: 40px;
   text-align:center;
+  color: #8c52ff;
 }
 .form-text p {
   font-family: Noto Sans;
-  font-size: 15px;
+  font-size: 20px;
   text-align:center;
-  text-decoration: underline;
 }
 .form-label {
   font-family: Noto Sans;
@@ -255,35 +239,67 @@ footer {
   transition: transform 0.3s;
   border: 3px solid lightgreen;
 }
+.image2 {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 3px solid lightgreen;
+}
 
 .image:hover {
   transform: scale(1.1);
 }
   /*gallery styling code created by Charlie*/
 
-.frame-mission-statement {
+.content-about {
   border: 3px solid lightgreen;
   padding: 10px;
   width: 95%;
   margin: auto;
 }
-.frame-mission-statement p {
+.content-about p {
   text-align: center;
   font-family: Noto Sans;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1.5;
 }
-.frame-mission-statement h1 {
+.content-about h1 {
   text-align: center;
-  font-family: Noto Sans;
-  font-size: 50px;
+  font-family: Unbounded;
+  font-size: 40px;
   width: 95%;
+  margin: auto;
+  color: #8c52ff;
 }
-/* Style frame for About us page created by Charlie */
+.content-about h2 {
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 40px;
+  width: 95%;
+  margin: auto;
+  color: #8c52ff;
+}
+.content-about a:hover {
+  color: lightgreen;
+  transform: scale(1.1);
+}
+/* Style frame for Content and text elements on multiple pages created by Charlie */
+
 .game-explain{
  border: 3px solid lightgreen;
+ padding: 10px;
+ width: 95%;
+ margin: auto;
 }
 .game-explain h1, p{
   text-align: center;
+}
+.game-explain h1 {
+  color: #8c52ff;
+}
+.form-game h4 {
+  font-style: Noto Sans;
 }
 .form-game {
   display: flex;
@@ -295,3 +311,32 @@ footer {
   align-items: center;
 }
 /* Styling for game created by Charlie*/
+
+@media screen and (max-width: 1000px) {
+.wrapper {
+width: 90%;
+}
+.navbar {
+width: 60%;
+background-color: olive;
+}
+.footer {
+width: 30%;
+background-color: teal;
+}
+}
+
+@media screen and (max-width: 500px) {
+.wrapper {
+width: auto;
+float: none;
+background-color: orange;
+}
+.navbar {
+width: auto;
+float: none;
+}
+img {
+  width: 30%;
+}
+}

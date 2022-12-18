@@ -46,8 +46,4 @@ form.addEventListener('submit', function(event) {
     form.before(errorDiv);
   }
 });
-function successfulSubmit() {
-  var success = document.getElementsById('#success')
-  success.textContent = "Your form has been submitted";
-}
 //This validation code was created by Charlie with help from here Reference: https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/ -->
