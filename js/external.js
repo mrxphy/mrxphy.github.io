@@ -85,3 +85,7 @@ function functionExplain() {
   document.getElementById("newsletter").innerHTML = "Mind Over Matter is not affiliated with any of the below links and does not own any of the below content. We believe these videos will be beneficial to anyone interested in understanding Mental Health. The owner of these videos are referenced to view these references click me.";
 
 }
+function successfulSubmit() {
+  document.getElementById("success").innerHTML = "We will be in contact with you soon!";
+
+}
