@@ -131,7 +131,9 @@ footer {
   font-family: Noto Sans;
   font-size: 10px;
   position: relative;
-  height: 50px
+  bottom: 0;
+  height: auto;
+  width: 100%;
   margin: auto;
 }
 
@@ -176,6 +178,9 @@ footer {
   font-size: 20px;
   font-family: Noto Sans;
   text-align: center;
+}
+.social-media-links img {
+  width: 50px;
 }
 .social-media-links:hover li a img {
   transform: scale(1.1);
