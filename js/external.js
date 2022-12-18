@@ -47,3 +47,41 @@ form.addEventListener('submit', function(event) {
   }
 });
 //This validation code was created by Charlie with help from here Reference: https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/ -->
+
+
+function functionName() {
+  var fname = document.getElementById("fName");
+  var lname = document.getElementById("lName");
+  var email = document.getElementById("email");
+  document.getElementById("newsletter").innerHTML = "Hello " + fname.value + " " + lname.value + "." + " We will send our latest newsletter to " + email.value + ". To unsubscribe to our newsletter click on your email.";
+
+}
+function changeStyle() {
+  document.getElementById("newsletter").innerHTML = "You have successfully unsubscribed to Mind Over Matters newsletter. If this was a mistake double click to undo."
+  document.getElementById("newsletter").style.fontStyle = "Noto Sans";
+  document.getElementById("newsletter").style.fontSize = "20px";
+  document.getElementById("newsletter").style.color = "black";
+  document.getElementById("newsletter").style.backgroundColor = "red";
+  document.getElementById("newsletter").style.textAlign = "center";
+}
+
+function changeStyle2() {
+  var fname = document.getElementById("fName");
+  var lname = document.getElementById("lName");
+  document.getElementById("newsletter").innerHTML = "Great to have you back. Have a wonderful day " + fname.value + " " + lname.value + ".";
+  document.getElementById("newsletter").style.fontStyle = "Noto Sans";
+  document.getElementById("newsletter").style.fontSize = "20px";
+  document.getElementById("newsletter").style.color = "black";
+  document.getElementById("newsletter").style.backgroundColor = "lightgreen";
+  document.getElementById("newsletter").style.textAlign = "center";
+}
+//This code is for the about us page Newsletter form and was Created by Charlie -->
+
+function functionReference() {
+  document.getElementById("newsletter").innerHTML = "Video 1 belongs to Ted-Ed and was Written by Madhumita Murgia. Video 2 belongs to AsapSCIENCE. Created by: Mitchell Moffit and Gregory Brown. Written by: Amanda Edward, Rachel Salt, Mitchell Moffit & Gregory Brown. Illustrated by: Max Simmons. Edited by: Sel Ghebrehiwot. Video 3 belongs to Ted-Ed. Speaker: Leon Taylor";
+
+}
+function functionExplain() {
+  document.getElementById("newsletter").innerHTML = "Mind Over Matter is not affiliated with any of the below links and does not own any of the below content. We believe these videos will be beneficial to anyone interested in understanding Mental Health. The owner of these videos are referenced to view these references click me.";
+
+}

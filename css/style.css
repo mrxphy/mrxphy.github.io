@@ -1,16 +1,12 @@
 body {
   background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBhdHRlcm58ZW58MHx8MHx8&w=1000&q=80");
 }
-
 .wrapper {
   background-color: #3D3D3D;
   margin: 0 auto;
   height: auto;
   width: 80%;
 }
-
-/* wrapper and body done by Slava. Royalty free background image */
-
 .header {
   display: flex;
   align-items: center;
@@ -96,6 +92,7 @@ p {
   text-align: center;
   background-color: #2B2B2B;
   font-family: Unbounded;
+  font-size: 50px
 }
 
 .navbar li a:hover {
@@ -125,7 +122,7 @@ ul li a {
   color: white;
   margin: 10px;
 }
-/* navbar and header styling done by Charlie. navbar, wrapper and background colour chosen by Slava*/
+/* navbar and header styling done by Slava and Charlie. Wrapper done by Slava. Royalty free background image background chosen by Slava*/
 
 footer {
   background-color: #2B2B2B;
@@ -136,7 +133,7 @@ footer {
   position: relative;
   bottom: 0;
   height: auto 0;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 
@@ -225,12 +222,17 @@ footer {
 .error {
   color: red;
 }
-/*form styling completed by Charlie*/
+/*form styling on Contact page completed by Charlie*/
 
 #image-gallery {
   display: flex;
   justify-content: space-between;
 }
+#image-gallery2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .image {
   width: 48%;
@@ -250,6 +252,9 @@ footer {
 .image:hover {
   transform: scale(1.1);
 }
+.image:hover a img {
+  transform: scale(1.1);
+}
   /*gallery styling code created by Charlie*/
 
 .content-about {
@@ -257,6 +262,7 @@ footer {
   padding: 10px;
   width: 95%;
   margin: auto;
+  height: auto;
 }
 .content-about p {
   text-align: center;
@@ -283,6 +289,25 @@ footer {
 .content-about a:hover {
   color: lightgreen;
   transform: scale(1.1);
+}
+.content-about label{
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+}
+.content-about input{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;]
+  margin: auto 0;
+}
+
+.content-about label input button {
+align-items: center;
+margin: auto 0;
 }
 /* Style frame for Content and text elements on multiple pages created by Charlie */
 
@@ -317,26 +342,98 @@ footer {
 width: 90%;
 }
 .navbar {
-width: 60%;
-background-color: olive;
+width: 100%;
 }
-.footer {
-width: 30%;
-background-color: teal;
+.navbar li a {
+font-size: 35px;
+}
+footer {
+width: auto;
+}
+.copyright-warning, .contact-info, .social-media-links {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 }
 
 @media screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: lightgreen;
+    justify-content: center;
+  }
+  .header h1 {
+    font-size: 15px;
+  }
+p {
+  font-size: 10px;
+}
+h1 {
+  font-size: 15px;
+}
+h2 {
+  font-size: 15px;
+}
 .wrapper {
-width: auto;
-float: none;
-background-color: orange;
+width: 50%;
+}
+.navbar li a {
+font-size: 15px;
 }
 .navbar {
-width: auto;
+width: 100%;
 float: none;
+height: auto;
 }
-img {
-  width: 30%;
+#image-gallery {
+  width: 95%;
 }
+#image-gallery2 {
+  width: 10%;
+  height: auto;
+}
+footer{
+  width: auto;
+}
+.copyright-warning, .contact-info, .social-media-links {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-about {
+  width: 80%;
+}
+.content-about p{
+  font-size: 10px;
+}
+.content-about h1{
+  font-size: 15px;
+}
+.content-about h2{
+  font-size: 15px;
+}
+.form-text p{
+  font-size: 10px;
+}
+.form-text h1{
+  font-size: 15px;
+}
+.form-text {
+  width: 80%;
+}
+.form, .game-explain {
+  width: 80%;
+  height: auto;
+}
+.form-game h4 {
+  font-size: 8px;
 }
